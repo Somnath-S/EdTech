@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduTech Kids — Learn & Play</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Minimal playful styles -->
+  <style> 
+    :root{
+      --brand:#6f5cab;
+      --brand-2:#495e52;
+      --sun:hwb(265 40% 42%);
+    }
+    body{scroll-behavior:smooth;}
+    .navbar{background:linear-gradient(90deg,var(--brand),var(--brand-2))}
+    .hero{
+      background: radial-gradient(ellipse at 20% 10%, #cea7e9 0, #fff 55%),
+                  linear-gradient(135deg,#515d8f 0,#683d52 60%);
+    }
+    .hero-badge{background:var(--sun); color:#000; border-radius:999px; padding:.4rem .9rem; font-weight:700}
+    .section-title{font-weight:800; letter-spacing:.2px}
+    .card-course, .card-review{border:0; border-radius:20px; box-shadow:0 12px 28px rgba(178, 35, 35, 0.06)}
+    .card-teacher{border:0; border-radius:20px; box-shadow:0 12px 28px rgba(174, 180, 227, 0.647)}
+    .card-course:hover, .card-teacher:hover, .card-review:hover{transform:translateY(-3px); transition:.25s ease}
+    .level-badge{border-radius:999px; font-size:.75rem; padding:.25rem .6rem}
+    .level-begin{background:#98d18d; color:#0b63b1}
+    .level-inter{background:#e8fff6; color:#0d8d74}
+    .level-adv{background:#fff0f3; color:#c21b48}
+    .teacher-pic{width:110px; height:110px; object-fit:cover; border-radius:50%; border:5px solid #fff; box-shadow:0 8px 18px rgba(0,0,0,.08)}
+    .reviewer-pic{width:56px; height:56px; border-radius:50%; object-fit:cover}
+    .pill{border-radius:999px}
+    .contact-tile{border-radius:18px; background:#0d1b2a; color:#fff; height:100%; box-shadow:0 10px 26px rgba(13,27,42,.25)}
+    .footer{background:#0b1020}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-stars me-2"></i>Skillup</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+         <li class="nav-item"><a class="nav-link" href="#about us">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+        <!--<span class="hero-badge">Ages 6–15 • Fun + Structured</span> -->
+          <h1 class="display-5 fw-bold mt-3">Explore. Experiment. Excel!</h1>
+          <p class="lead mt-2">Learn to build—projects, experiments, and code that turn ideas into real things.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#courses" class="btn btn-dark pill px-4"><i class="bi bi-joystick"></i> Explore Courses</a>
+            <a href="#appointment" class="btn btn-outline-dark pill px-4"><i class="bi bi-calendar2-check"></i> Book a Slot</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="assets/img_ed.jpg" alt="Kids coding illustration" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- COURSES (with filters like Udemy/Class Central) -->
+  <section id="courses" class="py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between mb-3">
+        <h2 class="section-title m-0">Our Courses</h2>
+        <div class="d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary pill filter-btn active" data-level="all">All</button>
+          <button class="btn btn-sm btn-outline-primary pill filter-btn" data-level="beginner">Beginner</button>
+          <button class="btn btn-sm btn-outline-primary pill filter-btn" data-level="intermediate">Intermediate</button>
+          <button class="btn btn-sm btn-outline-primary pill filter-btn" data-level="advanced">Advanced</button>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Beginner -->
+        <div class="col-md-6 col-lg-4 course-item" data-level="beginner">
+          <div class="card card-course h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="level-badge level-begin">Beginner</span>
+                <span class="badge text-bg-warning">Quizzes + Cert</span>
+              </div>
+              <h5 class="mt-3">Python Playground</h5>
+              <p class="mb-3">Learn Python basics with mini-games, puzzles & notebooks.</p>
+              <div class="d-flex gap-2">
+                <span class="badge rounded-pill text-bg-light"><i class="bi bi-file-earmark-text"></i> Notes</span>
+                <span class="badge rounded-pill text-bg-light"><i class="bi bi-camera-video"></i> Videos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="col-md-6 col-lg-4 course-item" data-level="intermediate">
+          <div class="card card-course h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="level-badge level-inter">Intermediate</span>
+                <span class="badge text-bg-warning">Quizzes + Cert</span>
+              </div>
+              <h5 class="mt-3">Python + Data Structures</h5>
+              <p class="mb-3">Build logic with lists, stacks, queues & simple challenges.</p>
+              <div class="d-flex gap-2">
+                <span class="badge rounded-pill text-bg-light"><i class="bi bi-journal-code"></i> Exercises</span>
+                <span class="badge rounded-pill text-bg-light"><i class="bi bi-people"></i> Hybrid Live</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advanced -->
+        <div class="col-md-6 col-lg-4 course-item" data-level="advanced">
+          <div class="card card-course h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="level-badge level-adv">Advanced</span>
+                <span class="badge text-bg-warning">Quizzes + Cert</span>
+              </div>
+              <h5 class="mt-3">Python + Data Science + DS</h5>
+              <p class="mb-3">Tiny data projects, CSVs, charts, and beginner ML ideas.</p>
+              <div class="d-flex gap-2">
+                <span class="badge rounded-pill text-bg-light"><i class="bi bi-bar-chart"></i> Projects</span>
+                <span class="badge rounded-pill text-bg-light"><i class="bi bi-patch-check"></i> Certificate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bonus kid-friendly subjects -->
+        <div class="col-md-6 col-lg-4 course-item" data-level="beginner">
+          <div class="card card-course h-100">
+            <div class="card-body">
+              <span class="level-badge level-begin">Beginner</span>
+              <h5 class="mt-3"><i class="bi bi-controller"></i> Game Logic with Scratch</h5>
+              <p>Drag & drop games for younger kids; think like a coder!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 course-item" data-level="intermediate">
+          <div class="card card-course h-100">
+            <div class="card-body">
+              <span class="level-badge level-inter">Intermediate</span>
+              <h5 class="mt-3"><i class="bi bi-lightbulb"></i> Math + Code Challenges</h5>
+              <p>Fun math puzzles solved using Python snippets.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 course-item" data-level="advanced">
+          <div class="card card-course h-100">
+            <div class="card-body">
+              <span class="level-badge level-adv">Advanced</span>
+              <h5 class="mt-3"><i class="bi bi-cpu"></i> Sensors & Data (Simulated)</h5>
+              <p>Explore “IoT style” datasets and visualize them safely in-browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="small text-muted mt-3">
+        Discovery/filter UX inspired by Udemy & Class Central; free notes ethos inspired by Magnet Brains; kid-first spirit inspired by e-Learning for Kids. 
+      </p>
+    </div>
+  </section>
+
+  <!-- TEACHERS (4 profiles with qualifications) -->
+  <section id="teachers" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Meet Our Faculty</h2>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card card-teacher text-center p-3 h-100">
+            <img src="assets/download.png" alt="Dr Anjali Sharma" class="teacher-pic mx-auto mt-2">
+            <div class="card-body">
+              <h5 class="mb-1">Dr.Prashant</h5>
+              <div class="text-muted">PhD, Computer Science • Data Science</div>
+              <div class="mt-2"><span class="badge text-bg-light">Professor</span> <span class="badge text-bg-light">10+ yrs</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card card-teacher text-center p-3 h-100">
+            <img src="assets/download.png" alt="Prof Rajesh Kumar" class="teacher-pic mx-auto mt-2">
+            <div class="card-body">
+              <h5 class="mb-1">Prof. Suraj</h5>
+              <div class="text-muted">Professor • AI & Python</div>
+              <div class="mt-2"><span class="badge text-bg-light">M.Tech</span> <span class="badge text-bg-light">15+ yrs</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card card-teacher text-center p-3 h-100">
+            <img src="assets/download.png" alt="Dr Meera Patel" class="teacher-pic mx-auto mt-2">
+            <div class="card-body">
+              <h5 class="mb-1">Dr. Meera </h5>
+              <div class="text-muted">PhD • Data Structures</div>
+              <div class="mt-2"><span class="badge text-bg-light">Researcher</span> <span class="badge text-bg-light">8+ yrs</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card card-teacher text-center p-3 h-100">
+            <img src="assets/download.png" alt="Mr Arjun Verma" class="teacher-pic mx-auto mt-2">
+            <div class="card-body">
+              <h5 class="mb-1">Mr. Sachin</h5>
+              <div class="text-muted">M.Sc EduTech • Creative Coding</div>
+              <div class="mt-2"><span class="badge text-bg-light">Mentor</span> <span class="badge text-bg-light">12+ yrs</span></div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- REVIEWS (with photos, carousel) -->
+  <section id="reviews" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Happy Learners & Families</h2>
+
+      <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card card-review p-4">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/download.png" class="reviewer-pic" alt="Riya's Mom">
+                    <div>
+                      <strong>Riya’s Mom</strong> • Grade 5
+                      <div class="text-muted small">Beginner Python</div>
+                    </div>
+                    <span class="ms-auto text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  </div>
+                  <p class="mt-3 mb-0">“The quizzes and certificates keep her excited. She actually asks for homework!”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card card-review p-4">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/download.png" class="reviewer-pic" alt="Aarav's Dad">
+                    <div>
+                      <strong>Aarav’s Dad</strong> • Grade 7
+                      <div class="text-muted small">Intermediate DS</div>
+                    </div>
+                    <span class="ms-auto text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  </div>
+                  <p class="mt-3 mb-0">“Structured notes like Magnet Brains + engaging projects. Perfect combo.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card card-review p-4">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/download.png" class="reviewer-pic" alt="Meera's Mom">
+                    <div>
+                      <strong>M’s Mom</strong> • Grade 8
+                      <div class="text-muted small">Advanced DS + DSci</div>
+                    </div>
+                    <span class="ms-auto text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  </div>
+                  <p class="mt-3 mb-0">“My kid built charts from CSVs. She explains data to grandparents now!”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK APPOINTMENT (Name / Date / Time) -->
+  <section id="appointment" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Book an Appointment</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <form id="appointmentForm" class="p-4 bg-white card-course">
+            <div class="row g-3">
+              <div class="col-12">
+                <label for="studentName" class="form-label">Student Name</label>
+                <input type="text" id="studentName" class="form-control form-control-lg" placeholder="e.g., Aarav Gupta" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="date" class="form-label">Preferred Date</label>
+                <input type="date" id="date" class="form-control form-control-lg" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="time" class="form-label">Preferred Time</label>
+                <input type="time" id="time" class="form-control form-control-lg" required>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-dark btn-lg w-100 pill" type="submit">
+                  <i class="bi bi-send-check me-1"></i> Book Appointment
+                </button>
+              </div>
+              <div class="col-12">
+                <div id="bookAlert" class="alert d-none" role="alert"></div>
+              </div>
+            </div>
+          </form>
+          <p class="text-center mt-3 small text-muted">Email confirmation powered by EmailJS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (no form; just info) -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Contact Us</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 contact-tile d-flex align-items-start gap-3">
+            <i class="bi bi-envelope-paper fs-1"></i>
+            <div>
+              <div class="fw-bold">Email</div>
+              <a href="mailto:support@Skillup.com" class="link-light">support@Skillup.com</a>
+              <div class="small opacity-75">We reply within 24 hours.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 contact-tile d-flex align-items-start gap-3">
+            <i class="bi bi-telephone-outbound fs-1"></i>
+            <div>
+              <div class="fw-bold">Phone</div>
+              <a href="tel:+919876543210" class="link-light">+91 98765 43210</a>
+              <div class="small opacity-75">Call 10am–7pm IST (Mon–Sat)</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 contact-tile d-flex align-items-start gap-3">
+            <i class="bi bi-geo-alt fs-1"></i>
+            <div>
+              <div class="fw-bold">Address</div>
+              Wagholi,Pune, Maharashtra<br>
+              <a class="link-light" target="_blank" href="https://maps.google.com/?q=123 Learning Street Pune">Open in Maps</a>
+              <div class="small opacity-75">Walk-ins by prior slot only.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a class="btn btn-outline-dark pill" href="#courses"><i class="bi bi-arrow-up"></i> Back to Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer text-white py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div>© 2025 Skillup</div>
+      <div class="d-flex align-items-center gap-3">
+        <span class="opacity-75 small">Inspired by: Udemy, Vedantu, Magnet Brains, e-Learning for Kids, Class Central.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: Bootstrap, EmailJS, App -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){ emailjs.init("YOUR_PUBLIC_KEY"); })(); /* <-- replace */
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
