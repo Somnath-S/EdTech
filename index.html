@@ -9,115 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Minimal playful styles -->
-  <style> 
-    /* ==============================
-   EduTech Kids – Candy Pop Theme
-   ============================== */
-
-/* Candy Pop Palette */
-/* ==============================
-   EduTech Kids – Rainbow Fun Theme
-   ============================== */
-/* ==============================
-   EduTech Kids – Magic Galaxy Theme
-   ============================== */
-
-/* ==============================
-   EduTech Kids – Rainbow Fun Theme
-   ============================== */
-
-:root {
-  --pink: #FF61A6;
-  --orange: #FF9F45;
-  --yellow: #a7c1f8;
-  --green: #6BCB77;
-  --blue: #4D96FF;
-  --purple: #9D4EDD;
-  --white: #ffffff;
-  --dark: #2D2D2D;
-}
-
-/* General Reset */
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(180deg, var(--yellow) 0%, var(--white) 100%);
-  color: var(--dark);
-  margin: 0;
-  padding: 0;
-}
-
-/* Navbar */
-.navbar {
-  background: linear-gradient(90deg, var(--pink), var(--orange), var(--green), var(--blue));
-  padding: 1rem 2rem;
-  border-bottom: 5px solid var(--purple);
-}
-
-.navbar-brand {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--white) !important;
-}
-
-.nav-link {
-  color: var(--white) !important;
-  font-weight: 600;
-}
-
-.nav-link:hover {
-  color: var(--yellow) !important;
-}
-
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background: radial-gradient(circle, var(--blue), var(--purple));
-  color: var(--white);
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  animation: bounce 2s infinite;
-}
-
-/* Cards */
-.level-card {
-  border-radius: 20px;
-  padding: 2rem;
-  color: var(--white);
-  text-align: center;
-  margin: 1rem 0;
-  transition: transform 0.3s;
-}
-
-.level-card:hover { transform: translateY(-8px); }
-
-.level-begin { background: var(--green); }
-.level-inter { background: var(--orange); }
-.level-adv   { background: var(--pink); }
-
-/* Footer */
-.footer {
-  background: var(--purple);
-  color: var(--white);
-  text-align: center;
-  padding: 1rem;
-  border-top: 5px solid var(--yellow);
-}
-
-@keyframes bounce {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-}
-
-
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -132,7 +24,7 @@ body {
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li> 
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
    
         </ul>
       </div>
@@ -258,10 +150,6 @@ body {
           </div>
         </div>
       </div>
-
-      <p class="small text-muted mt-3">
-        Discovery/filter UX inspired by Udemy & Class Central; free notes ethos inspired by Magnet Brains; kid-first spirit inspired by e-Learning for Kids. 
-      </p>
     </div>
   </section>
 
@@ -317,19 +205,18 @@ body {
 
   <!-- REVIEWS (with photos, carousel) -->
   <!-- Happy Learners Section -->
+<!-- REVIEWS (with photos, carousel) -->
 <section class="happy-learners py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-5">😊 Happy Learners</h2>
     <div class="row g-4">
 
       <!-- Card 1 -->
       <div class="col-md-4 col-lg-4">
         <div class="card h-100 shadow-sm p-3">
           <div class="card-body text-center">
-            <h6 class="text-muted">- Arjun</h6>
+            <h6 class="text-muted">- Arjun <span class="d-block small">🇮🇳 India</span></h6>
             <p class="card-text">
-              "I love learning with colors and games! The activities are so much fun and make me excited every day.
-              My friends also enjoy playing and learning with me, and it feels like a big adventure in school."
+              "The projects gave real hands-on practice.I can already see the confidence growing."           
             </p>
           </div>
         </div>
@@ -339,10 +226,9 @@ body {
       <div class="col-md-4 col-lg-4">
         <div class="card h-100 shadow-sm p-3">
           <div class="card-body text-center">
-            <h6 class="text-muted">- Ananya</h6>
+            <h6 class="text-muted">- Ananya <span class="d-block small">🇺🇸 America</span></h6>
             <p class="card-text">
-              "Math puzzles are so much fun now! I used to find numbers boring, but here I get to solve them like games.
-              I feel smarter and more confident, and my parents are also proud of my progress."
+              "Excellent teaching methods and clear guidance.My child looks forward to every session."
             </p>
           </div>
         </div>
@@ -352,10 +238,9 @@ body {
       <div class="col-md-4 col-lg-4">
         <div class="card h-100 shadow-sm p-3">
           <div class="card-body text-center">
-            <h6 class="text-muted">- Rohan</h6>
+            <h6 class="text-muted">- Rohan <span class="d-block small">🇦🇺 Australia</span></h6>
             <p class="card-text">
-              "I can solve shapes and letters easily now! The colorful games help me remember everything faster.
-              I even teach my younger sister at home, and she loves it too!"
+              "The lessons are easy to follow and interactive.A big improvement in problem-solving skills."
             </p>
           </div>
         </div>
@@ -365,10 +250,9 @@ body {
       <div class="col-md-4 col-lg-4">
         <div class="card h-100 shadow-sm p-3">
           <div class="card-body text-center">
-            <h6 class="text-muted">- Sudhir</h6>
+            <h6 class="text-muted">- Sudhir <span class="d-block small">🇨🇦 Canada</span></h6>
             <p class="card-text">
-              "The galaxy theme makes learning exciting and magical! I enjoy doing my lessons with stars and planets.
-              It feels like I'm traveling in space while learning new things every day."
+              "Wonderful support from instructors and staff.The course builds real curiosity in children."
             </p>
           </div>
         </div>
@@ -378,10 +262,9 @@ body {
       <div class="col-md-4 col-lg-4">
         <div class="card h-100 shadow-sm p-3">
           <div class="card-body text-center">
-            <h6 class="text-muted">- Ishaan</h6>
+            <h6 class="text-muted">- Ishaan <span class="d-block small">🇬🇧 UK</span></h6>
             <p class="card-text">
-              "I learned coding basics with fun games, and now I can make small projects on my own!
-              It makes me feel like a real programmer, and I can’t wait to build more cool things."
+              "This program exceeded our expectations.We recommend it to all parents."
             </p>
           </div>
         </div>
@@ -391,10 +274,9 @@ body {
       <div class="col-md-4 col-lg-4">
         <div class="card h-100 shadow-sm p-3">
           <div class="card-body text-center">
-            <h6 class="text-muted">- Kavya</h6>
+            <h6 class="text-muted">- Kavya <span class="d-block small">🇳🇿 New Zealand</span></h6>
             <p class="card-text">
-              "Now I love science experiments! I used to find them difficult, but here everything is explained simply.
-              I enjoy mixing colors, watching reactions, and learning how things work in real life."
+              "Wonderful course structure overall.The balance of practice and theory is great. 
             </p>
           </div>
         </div>
@@ -403,6 +285,7 @@ body {
     </div>
   </div>
 </section>
+
 
   <!-- BOOK APPOINTMENT (Name / Date / Time) -->
   <section id="appointment" class="py-5 bg-light">
@@ -434,7 +317,6 @@ body {
               </div>
             </div>
           </form>
-          <p class="text-center mt-3 small text-muted">Email confirmation powered by EmailJS.</p>
         </div>
       </div>
     </div>
@@ -443,13 +325,15 @@ body {
   <!-- CONTACT (no form; just info) -->
   <section id="contact" class="py-5">
     <div class="container">
-      <h2 class="section-title text-center mb-4">Contact Us</h2>
+      <h2 class="section-title text-center mb-3">Contact Us</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="p-4 contact-tile d-flex align-items-start gap-3">
+          <div class="p-4 contact-tile d-flex align-items-start gap-2">
             <i class="bi bi-envelope-paper fs-1"></i>
             <div>
-              <div class="fw-bold">Email</div>
+              <div class="fw-bold">Email
+                
+              </div>
               <a href="mailto:support@Skillup.com" class="link-light">support@Skillup.com</a>
               <!--<div class="small opacity-75">We reply within 24 hours.</div> -->
             </div>
@@ -483,27 +367,7 @@ body {
       </div>
     </div>
   </section>
-  <!-- ABOUT US -->
-  <section id="about" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-center mb-4">About Us</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <p class="lead text-center">
-            At <strong>Skillup</strong>, we believe learning should be fun, creative, and hands-on.
-            Our programs combine coding, problem-solving, and experiments to help kids explore their imagination.
-          </p>
-          <p class="text-center">
-            We are a passionate team of educators and technologists with years of experience in teaching kids.
-            From beginner-friendly drag-and-drop games to advanced coding and science experiments,
-            our goal is to make every child a confident and curious learner.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
+  
   <!-- FOOTER -->
   <footer class="footer text-white py-4">
     <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
