@@ -1,0 +1,217 @@
+/* ==============================
+   EduTech Kids – Candy Pop Theme
+   ============================== */
+
+/* Candy Pop Palette */
+:root {
+  --pink: #FF61A6;
+  --orange: #FF9F45;
+  --yellow: #a6b6d8;
+  --green: #6BCB77;
+  --blue: #e31a24d8;
+  --purple: #a37993ea;  
+  --white: #f6f5f5;
+  --dark: #131111;
+}
+
+/* General Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, var(--yellow) 0%, var(--white) 100%);
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, var(--pink), var(--orange), var(--green), var(--blue));
+  padding: 1rem 2rem;
+  border-bottom: 5px solid var(--purple);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white) !important;
+}
+
+.nav-link {
+  color: var(--white) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--yellow) !important;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: radial-gradient(circle, var(--blue), var(--purple));
+  color: var(--white);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  animation: bounce 2s infinite;
+}
+
+/* Cards */
+.level-card {
+  border-radius: 20px;
+  padding: 2rem;
+  color: var(--green);
+  text-align: center;
+  margin: 1rem 0;
+  transition: transform 0.3s;
+}
+
+.level-card:hover { transform: translateY(-8px); }
+
+.level-begin { background: var(--green); }
+.level-inter { background: var(--oange); }
+.level-adv   { background: var(--pink); }
+
+/* Footer */
+.footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  border-top: 5px solid var(--yellow);
+}
+ 
+
+
+
+/* Animations */
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+
+/* style of about us *//* ===== About Page (Skillup) ===== */
+.about-hero {
+  background: radial-gradient(circle at 20% 20%, var(--blue), var(--purple));
+  color: var(--white);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.about-kicker {
+  background: rgba(255,255,255,0.2);
+  color: var(--white);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.about-stats .stat-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--purple);
+  line-height: 1;
+}
+.stat-label {
+  margin-top: 0.35rem;
+  font-weight: 600;
+}
+
+.about-teach {
+  border-radius: 18px;
+  border: 2px dashed rgba(49,0,0,0.06);
+}
+
+.step-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.step-num {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--white);
+  background: var(--blue);
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-weight: 800;
+}
+
+/* contact
+/* CONTACT SECTION ONLY */
+#contact {
+  background: linear-gradient(135deg, #a6a1a4, #605e52); /* gradient bg */
+  color: #191616;
+  border-radius: 20px;
+}
+
+#contact .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #100e0e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contact .contact-tile {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: transform 0.2s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+#contact .contact-tile:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#contact i {
+  color: #060606;
+  flex-shrink: 0;
+}
+
+#contact a {
+  color: #0a0909;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#contact a:hover {
+  color: #070606;
+  text-decoration: underline;
+}
+
+#contact .btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#contact .btn:hover {
+  background: #100f0f;
+  color: #2c2529;
+}
+
+#contact .contact-tile a {
+  color: #fdfdfd !important;  /* white for links (email, phone, maps) */
+  text-decoration: none;
+}
