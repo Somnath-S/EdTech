@@ -1,0 +1,115 @@
+
+  <!-- Minimal playful styles -->
+  <style> 
+    /* ==============================
+   EduTech Kids – Candy Pop Theme
+   ============================== */
+
+/* Candy Pop Palette */
+/* ==============================
+   EduTech Kids – Rainbow Fun Theme
+   ============================== */
+/* ==============================
+   EduTech Kids – Magic Galaxy Theme
+   ============================== */
+
+/* ==============================
+   EduTech Kids – Rainbow Fun Theme
+   ============================== */
+
+:root {
+  --pink: #FF61A6;
+  --orange: #FF9F45;
+  --yellow: #a7c1f8;
+  --green: #6BCB77;
+  --blue: #4D96FF;
+  --purple: #9D4EDD;
+  --white: #ffffff;
+  --dark: #2D2D2D;
+}
+
+/* General Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, var(--yellow) 0%, var(--white) 100%);
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, var(--pink), var(--orange), var(--green), var(--blue));
+  padding: 1rem 2rem;
+  border-bottom: 5px solid var(--purple);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white) !important;
+}
+
+.nav-link {
+  color: var(--white) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--yellow) !important;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: radial-gradient(circle, var(--blue), var(--purple));
+  color: var(--white);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  animation: bounce 2s infinite;
+}
+
+/* Cards */
+.level-card {
+  border-radius: 20px;
+  padding: 2rem;
+  color: var(--white);
+  text-align: center;
+  margin: 1rem 0;
+  transition: transform 0.3s;
+}
+
+.level-card:hover { transform: translateY(-8px); }
+
+.level-begin { background: var(--green); }
+.level-inter { background: var(--orange); }
+.level-adv   { background: var(--pink); }
+
+/* Footer */
+.footer {
+  background: var(--purple);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  border-top: 5px solid var(--yellow);
+}
+
+.py-5 {
+
+}
+
+
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+
+  </style>

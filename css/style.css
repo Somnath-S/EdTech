@@ -158,7 +158,7 @@ body {
 /* contact
 /* CONTACT SECTION ONLY */
 #contact {
-  background: linear-gradient(135deg, #a6a1a4, #605e52); /* gradient bg */
+  background: linear-gradient(135deg, #d9c5d1, #605e52); /* gradient bg */
   color: #191616;
   border-radius: 20px;
 }
@@ -215,3 +215,4 @@ body {
   color: #fdfdfd !important;  /* white for links (email, phone, maps) */
   text-decoration: none;
 }
+
